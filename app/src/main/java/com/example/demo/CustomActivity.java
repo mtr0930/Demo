@@ -217,14 +217,14 @@ public class CustomActivity extends AppCompatActivity implements SurfaceHolder.C
 //                                    int scaled_width = (int) (2.0 * boxWidth);
 //                                    int scaled_height = (int) (2.0 * boxHeight);
                                     // 원래 여기 boxWidth
-                                    int scaled_width = (int) (x_scale * boxHeight);
+                                    int scaled_width = (int) (x_scale * boxWidth);
                                     int scaled_height = (int) (y_scale * boxHeight);
                                     int x1 = (int) ((imageBitmap.getWidth() - scaled_width)/2) ;
                                     int y1 = (int)((imageBitmap.getHeight() - scaled_height)/2);
 //                                    int width = (int)(2.0 * boxWidth);
 //                                    int height = (int) (2.0 * boxHeight);
                                     // 원래 여기 boxWidth
-                                    int width = (int)(x_scale * boxHeight);
+                                    int width = (int)(x_scale * boxWidth);
                                     int height = (int) (y_scale * boxHeight);
                                     Bitmap bitmap = Bitmap.createBitmap(imageBitmap, x1, y1, width, height, rotationMatrix, false);
                                     Uri original_uri = getImageUri(getApplicationContext(), bitmap);
